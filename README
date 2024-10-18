@@ -8,7 +8,9 @@ Requirements:
 
 Configuration:
     - Install Python
-    - Install pyinstaller for building tsystem.py if you want to use it as an exe (suggested)
+    - Install make
+    - Run "make prepare_venv" to prepare the venv in python
+    - Run "make compile" to create the tsystem.exe to use in your system
     - Run tsystem.py / tsystem.exe supplying the arguments for the functions
 
 Argument supported:

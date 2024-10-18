@@ -8,3 +8,4 @@ tsystem.exe
 build/*
 dist/*
 logs/*
+venv/*
