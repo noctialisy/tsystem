@@ -10,7 +10,9 @@ def main():
     video_handler = VideoHandler.VideoHandler(commands)
 
     if len(commands) <= 1:
-        print('Cannot parse command specs')
+        print('No command specified.')
+        print('')
+        system_handler.help()
                 
     else:
         for command in commands:
@@ -58,6 +60,9 @@ def main():
                         file_path = command_part[1]
 
                     video_handler.stream_markers_convert(file_path)
+            
+            else:
+                system_handler.help()
 
 
 main()
