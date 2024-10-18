@@ -1,5 +1,6 @@
 *.ini
 tsystem.spec
+tsystem.exe
 
 ! logs/dummy
 build/*
