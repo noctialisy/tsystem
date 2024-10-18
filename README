@@ -1,6 +1,10 @@
 A collection of tools and scripts to use for maintenance tasks in windows.
-
 The core library is based on python 3.12 and leverages basic Windows functionalities like DISM, SFC, Reg files and other Windows system components. 
+
+Requirements:
+    - FFMPEG for some video functionalities
+    - MAKE and pyinstaller to build the EXE from the python code
+    - You can run from any directory but to use the script you need the script, vcredist and logs directories in the same folder as the software
 
 Configuration:
     - Install Python
@@ -13,8 +17,12 @@ Argument supported:
     - system_clean_full
     - system_scan
     - system_test
+    - choco_install
+    - choco_remove
     - netframework_install
     - netframework_build
+    - video_merge
+    - stream_markers_convert
 
 Future steps:
     This project has grown in time and will probably have a GUI in the future as more functions are added.
