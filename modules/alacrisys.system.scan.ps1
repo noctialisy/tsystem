@@ -11,4 +11,4 @@ $j = Start-Job -ScriptBlock {DISM /Online /Cleanup-Image /RestoreHealth /LogPath
 $j = Start-Job -ScriptBlock {SFC /ScanNow}; $j | Wait-Job;
 
 findstr /c:"[SR]" C:\Windows\logs\cbs\cbs.log > $logPathSfc;
-robocopy "C:\Windows\logs\cbs\cbs.log" "$($logPathCbs)";
+Copy-Item "C:\Windows\logs\cbs\cbs.log" "$($logPathCbs)";
