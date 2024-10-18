@@ -1,1 +1,0 @@
-cd G:\TSystem\Modules;

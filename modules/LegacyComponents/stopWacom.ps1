@@ -1,2 +1,0 @@
-setWacomService "off";
-#setOfficeTasks "off";

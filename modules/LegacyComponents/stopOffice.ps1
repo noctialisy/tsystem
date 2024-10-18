@@ -1,2 +1,0 @@
-setOfficeService "off";
-setOfficeTasks "off";

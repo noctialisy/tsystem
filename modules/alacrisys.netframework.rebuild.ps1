@@ -1,2 +1,0 @@
-& ([String] $ngenExe = ((Get-ChildItem -Path C:\Windows\Microsoft.NET\Framework\v*\ngen.exe) | sort -Descending | Select -First 1)) update /force;
-& ([String] $ngenExe = ((Get-ChildItem -Path C:\Windows\Microsoft.NET\Framework64\v*\ngen.exe) | sort -Descending | Select -First 1)) update /force;

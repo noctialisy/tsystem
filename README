@@ -1,13 +1,20 @@
 A collection of tools and scripts to use for maintenance tasks in windows.
 
-The scripts are mostly written in PowerShell and can be used without any additional installation, only some development functionalities use Python, but those are still being tested.
+The core library is based on python 3.12 and leverages basic Windows functionalities like DISM, SFC, Reg files and other Windows system components. 
 
 Configuration:
-    To execute the scripts you need:
-        PS Console as admin
-        Script execution configuration by running the command "Set-ExecutionPolicy RemoteSigned"
-        Add the "modules" folder to windows path variable so the commands are available from anywhere
+    - Install Python
+    - Install pyinstaller for building tsystem.py if you want to use it as an exe (suggested)
+    - Run tsystem.py / tsystem.exe supplying the arguments for the functions
 
+Argument supported:
+    - system_clean
+    - system_clean_set
+    - system_clean_full
+    - system_scan
+    - system_test
+    - netframework_install
+    - netframework_build
 
 Future steps:
     This project has grown in time and will probably have a GUI in the future as more functions are added.

@@ -1,9 +1,6 @@
 *.ini
 
-modules/PosteItaliane/*
-modules/alacrisys.tsystem.personal.test*
-
 ! logs/dummy
+build/*
+dist/*
 logs/*
-
-! tools/dummy

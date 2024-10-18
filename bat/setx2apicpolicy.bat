@@ -1,0 +1,1 @@
+bcdedit /set x2apicpolicy enable
