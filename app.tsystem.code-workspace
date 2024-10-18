@@ -11,10 +11,8 @@
 		"editor.formatOnSave": false,
 		"editor.formatOnType": false,
 		"editor.acceptSuggestionOnCommitCharacter": false,
-		"workbench.enableExperiments": false,
 		"workbench.settings.enableNaturalLanguageSearch": false,
 		"extensions.ignoreRecommendations": true,
-		"telemetry.enableTelemetry": false,
 		"explorer.confirmDragAndDrop": false,
 		"window.zoomLevel": 0,
 		"editor.minimap.enabled": false,
@@ -23,7 +21,6 @@
 		"breadcrumbs.enabled": true,
 		"editor.renderWhitespace": "none",
 		"files.eol": "\n",
-		"html.format.endWithNewline": true,
 		"editor.multiCursorModifier": "ctrlCmd",
 		"git.autofetch": true,
 		"php.validate.run": "onSave",
@@ -39,11 +36,6 @@
 			"**/.settings": true,
 			"**/.factorypath": true
 		},
-		"git.inputValidationSubjectLength": 72,
-		"atlascode.jira.enabled": false,
-		"atlascode.bitbucket.statusbar.showUser": false,
-		"atlascode.bitbucket.statusbar.showLogin": false,
-		"atlascode.bitbucket.statusbar.showProduct": false,
-		"atlascode.bitbucket.statusbar.enabled": false
+		"git.inputValidationSubjectLength": 72
 	}
 }
