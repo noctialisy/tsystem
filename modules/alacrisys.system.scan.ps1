@@ -1,5 +1,6 @@
-$logPathDism = "$($PSScriptRoot)\..\logs\dism.log";
-$logPathSfc = "$($PSScriptRoot)\..\logs\sfc.log";
+$date = Get-Date -UFormat "%Y_%m_%d_%H%M";
+$logPathDism = "$($PSScriptRoot)\..\logs\dism_$($date).log";
+$logPathSfc = "$($PSScriptRoot)\..\logs\sfc_$($date).log";
 
 $j = Start-Job -ScriptBlock {DISM /Online /Cleanup-Image /CheckHealth /LogPath:$input} -InputObject $logPathDism; $j | Wait-Job;
 $j = Start-Job -ScriptBlock {DISM /Online /Cleanup-Image /ScanHealth/LogPath:$input} -InputObject $logPathDism; $j | Wait-Job;
