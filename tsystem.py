@@ -1,11 +1,10 @@
-import sys
+import sys, os
 import classes.SystemHandler as SystemHandler
 import classes.VideoHandler as VideoHandler
 
 # Def Main
 def main():
     commands = sys.argv
-
     system_handler = SystemHandler.SystemHandler(commands)
     video_handler = VideoHandler.VideoHandler(commands)
 
@@ -30,6 +29,12 @@ def main():
 
             elif command == 'system_test':
                 system_handler.system_test()
+
+            elif command == 'choco_install':
+                system_handler.choco_install()
+
+            elif command == 'choco_remove':
+                system_handler.choco_remove()
 
             elif command == 'netframework_install':
                 system_handler.netframework_install()

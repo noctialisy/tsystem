@@ -1,9 +1,10 @@
 import sys, os, subprocess, datetime, csv, json
 
 class MainHandler:
-    version = '0.24.08.12'
+    version = '0.24.08.13'
     commands = []
     date = datetime.datetime.now()
+    script_folder = os.path.realpath('./scripts')
 
     # Main constructor and command initializer
     def __init__(self, commands):
@@ -25,11 +26,15 @@ class MainHandler:
         print('  system_clean_set')
         print('    Calls cleanmgr to set the default clean profile')
         print('  system_clean_full')
-        print('    Same as system_clean but also calls cleanEventLog.bat from the bat folder')
+        print('    Same as system_clean but also calls clean_event_log.bat from the script folder')
         print('  system_scan')
         print('    Scans the system using DISM and SFC to find errors and repair them')
         print('  system_test')
         print('    Runs WinSat and writes the results in the log folder')
+        print('  choco_install')
+        print('    Install chocolatey package manager')
+        print('  choco_remove')
+        print('    Completely remove chocolatey package manager')
         print('  netframework_install')
         print('    Deploys a complete setup of the .NET runtimes to allow the system to run any .NET content')
         print('  netframework_build')

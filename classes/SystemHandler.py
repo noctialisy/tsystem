@@ -11,8 +11,9 @@ class SystemHandler(MainHandler.MainHandler):
         subprocess.run(['cleanmgr', '/sageset:1'])
     
     def system_clean_full(self):
+        path = './bat'
         subprocess.run(['cleanmgr', '/sagerun:1'])
-        subprocess.run('.\\bat\\cleanEventLog.bat')
+        subprocess.run(os.path.realpath(path) + '\\cleanEventLog.bat')
 
     def system_scan(self):
         subprocess.run('DISM /Online /Cleanup-Image /AnalyzeComponentStore')
@@ -21,13 +22,19 @@ class SystemHandler(MainHandler.MainHandler):
         subprocess.run('SFC /ScanNow')
 
     def system_test(self):
-        log_file = './logs/Assessment_' + str(self.date.timestamp()) + '.xml'
-        subprocess.run(['WinSat', 'formal', '-restart', 'clean', '-v', '-xml ' + log_file])
+        path = './logs'
+        log_file = 'Assessment_' + str(self.date.timestamp()) + '.xml'
+        subprocess.run(['WinSat', 'formal', '-restart', 'clean', '-v', '-xml ' + os.path.realpath(path) + '\\' + log_file])
 
+    def choco_install(self):
+        subprocess.run(self.script_folder + '\\choco_install.ps1')
+
+    def choco_remove(self):
+        subprocess.run(self.script_folder + '\\choco_remove.ps1')
 
     def netframework_install(self):
         netframework_folder = './vcredist'
-        netframework_content = os.scandir(os.fspath(netframework_folder))
+        netframework_content = os.scandir(os.path.realpath(netframework_folder))
 
         for netframework_app in netframework_content:
             subprocess.run([netframework_app, '/q'])
