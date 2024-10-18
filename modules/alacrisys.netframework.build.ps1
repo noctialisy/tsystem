@@ -1,2 +1,2 @@
-C:\Windows\Microsoft.Net\Framework\v4.0.30319\ngen.exe update;
-C:\Windows\Microsoft.Net\Framework64\v4.0.30319\ngen.exe update;
+& ([String] $ngenExe = ((Get-ChildItem -Path C:\Windows\Microsoft.NET\Framework\v*\ngen.exe) | sort -Descending | Select -First 1)) update;
+& ([String] $ngenExe = ((Get-ChildItem -Path C:\Windows\Microsoft.NET\Framework64\v*\ngen.exe) | sort -Descending | Select -First 1)) update;
