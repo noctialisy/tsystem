@@ -4,11 +4,18 @@ class MainHandler:
     version = '0.24.08.13'
     commands = []
     date = datetime.datetime.now()
-    script_folder = os.path.realpath('./scripts')
+    main_folder = os.path.dirname(os.path.abspath(__file__))
+    script_folder = os.path.realpath(main_folder + '/../scripts')
 
     # Main constructor and command initializer
     def __init__(self, commands):
         self.commands = commands
+
+        if getattr(sys, 'frozen', False):
+            self.main_folder = os.path.dirname(os.path.abspath(commands[0]))
+            self.script_folder = os.path.realpath(self.main_folder + '/scripts')
+
+        print(self.script_folder)
 
     def help(self):
         print('===========================================')
