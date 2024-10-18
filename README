@@ -1,0 +1,13 @@
+A collection of tools and scripts to use for maintenance tasks in windows.
+
+The scripts are mostly written in PowerShell and can be used without any additional installation, only some development funzionalities use Python, but those are still being tested.
+
+Configuration:
+    To execute the scripts you need:
+        PS Console as admin
+        Script execution configuration by running the command "Set-ExecutionPolicy RemoteSigned"
+        Add the "modules" folder to windows path variable so the commands are available from anywhere
+
+
+Future steps:
+    This project has grown in time and will probably have a GUI in the future as more functions are added.
