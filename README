@@ -19,6 +19,9 @@ Argument supported:
     - system_clean_event
     - system_scan
     - system_test
+    - system_check_versions
+    - system_update
+    - system_restore
     - choco_install
     - choco_remove
     - netframework_install

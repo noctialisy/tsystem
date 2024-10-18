@@ -1,11 +1,15 @@
 *.ini
+*.rsls
 tsystem.spec
 tsystem.exe
+test.py
 
 **/__pycache__/**
 
 ! logs/dummy
 build/*
+old/*
 dist/*
 logs/*
 venv/*
+modules/old/*

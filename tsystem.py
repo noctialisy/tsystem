@@ -36,6 +36,15 @@ def main():
             elif command == 'choco_remove':
                 system_handler.choco_remove()
 
+            elif command == 'system_check_versions':
+                system_handler.system_check_versions()
+
+            elif command == 'system_update':
+                system_handler.system_update()
+
+            elif command == 'camera_settings':
+                system_handler.camera_settings()
+
             elif command == 'netframework_install':
                 system_handler.netframework_install()
 

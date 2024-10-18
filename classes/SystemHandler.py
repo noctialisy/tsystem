@@ -28,6 +28,18 @@ class SystemHandler(MainHandler.MainHandler):
     def choco_remove(self):
         subprocess.run(os.path.realpath(self.script_folder + '/choco_remove.ps1'))
 
+    def system_check_versions(self):
+        subprocess.run('winget upgrade --include-unknown')
+
+    def system_update(self):
+        subprocess.run('winget upgrade --all --accept-package-agreements --accept-source-agreements')
+
+    def system_restore(self):
+        return
+    
+    def camera_settings(self):
+        subprocess.run('ffmpeg -f dshow -show_video_device_dialog true -i video="HD Pro Webcam C920"')
+
     def netframework_install(self):
         netframework_folder = './vcredist'
         netframework_content = os.scandir(os.path.realpath(netframework_folder))
