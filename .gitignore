@@ -2,6 +2,8 @@
 tsystem.spec
 tsystem.exe
 
+**/__pycache__/**
+
 ! logs/dummy
 build/*
 dist/*
