@@ -1,3 +1,7 @@
 *.ini
 
 modules/PosteItaliane/*
+! logs/dummy
+logs/*
+
+! tools/dummy
