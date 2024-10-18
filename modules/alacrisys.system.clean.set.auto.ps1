@@ -1,0 +1,1 @@
+cleanmgr /verylowdisk /sageset:1;

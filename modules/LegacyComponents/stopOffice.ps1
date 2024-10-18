@@ -1,0 +1,2 @@
+setOfficeService "off";
+setOfficeTasks "off";

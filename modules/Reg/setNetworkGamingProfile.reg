@@ -1,0 +1,12 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"SackOpts"=dword:00000001
+"TcpWindowSize"=dword:005f5e10
+"Tcp1323Opts"=dword:00000003
+"DefaultTTL"=dword:00000064
+"EnableTCPA"=dword:00000001
+"TCPMaxDataRetransmissions"=dword:00000007
+"EnablePMTUBHDetect"=dword:00000000
+"EnablePMTUDiscovery"=dword:00000001
+"GlobalMaxTcpWindowSize"=dword:005f5e10

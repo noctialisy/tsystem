@@ -1,0 +1,3 @@
+systemDefrag;
+systemScan;
+systemTest;
