@@ -14,15 +14,15 @@ $newString         = $args[2];
 $fileList = Get-ChildItem -File $filePath;
 
 foreach ($file in $fileList) {
-	echo "$($filePath)"+"$($file.Name)";
+	Write-Output "$($filePath)"+"$($file.Name)";
 	
 	try {
 		$fileContent = [System.IO.File]::ReadAllText("$($filePath)"+"$($file.Name)").Replace($string, $newString);
 		[System.IO.File]::WriteAllText("$($filePath)"+"$($file.Name)", $fileContent);
 		
 	} catch {
-		echo "An Error has occurred:";
-		echo $Error[0];
+		Write-Output "An Error has occurred:";
+		Write-Output $Error[0];
 		
 	}
 	
