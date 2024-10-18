@@ -21,8 +21,8 @@ def main():
             elif command == 'system_clean_set':
                 system_handler.system_clean_set()
 
-            elif command == 'system_clean_full':
-                system_handler.system_clean_full()
+            elif command == 'system_clean_event':
+                system_handler.system_clean_event()
 
             elif command == 'system_scan':
                 system_handler.system_scan()

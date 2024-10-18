@@ -14,7 +14,7 @@ Configuration:
 Argument supported:
     - system_clean
     - system_clean_set
-    - system_clean_full
+    - system_clean_event
     - system_scan
     - system_test
     - choco_install

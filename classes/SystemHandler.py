@@ -10,8 +10,7 @@ class SystemHandler(MainHandler.MainHandler):
     def system_clean_set(self):
         subprocess.run(['cleanmgr', '/sageset:1'])
     
-    def system_clean_full(self):
-        subprocess.run(['cleanmgr', '/sagerun:1'])
+    def system_clean_event(self):
         subprocess.run(os.path.realpath(self.script_folder + '/clean_event_log.bat'))
 
     def system_scan(self):
