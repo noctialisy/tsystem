@@ -1,0 +1,51 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.accessibilitySupport": "off",
+		"editor.cursorBlinking": "solid",
+		"editor.formatOnPaste": false,
+		"editor.formatOnSave": false,
+		"editor.formatOnType": false,
+		"editor.acceptSuggestionOnCommitCharacter": false,
+		"workbench.enableExperiments": false,
+		"workbench.settings.enableNaturalLanguageSearch": false,
+		"extensions.ignoreRecommendations": true,
+		"extensions.showRecommendationsOnlyOnDemand": true,
+		"telemetry.enableCrashReporter": false,
+		"telemetry.enableTelemetry": false,
+		"explorer.confirmDragAndDrop": false,
+		"window.zoomLevel": 0,
+		"editor.minimap.enabled": false,
+		"explorer.confirmDelete": false,
+		"editor.renderControlCharacters": false,
+		"breadcrumbs.enabled": true,
+		"editor.renderWhitespace": "none",
+		"files.eol": "\n",
+		"html.format.endWithNewline": true,
+		"editor.multiCursorModifier": "ctrlCmd",
+		"git.autofetch": true,
+		"php.validate.run": "onSave",
+		"files.watcherExclude": {
+			"**/.git/objects/**": true,
+			"**/.git/subtree-cache/**": true,
+			"**/node_modules/*/**": true,
+			"**/dev/***": true
+		},
+		"files.exclude": {
+			"**/.classpath": true,
+			"**/.project": true,
+			"**/.settings": true,
+			"**/.factorypath": true
+		},
+		"git.inputValidationSubjectLength": 72,
+		"atlascode.jira.enabled": false,
+		"atlascode.bitbucket.statusbar.showUser": false,
+		"atlascode.bitbucket.statusbar.showLogin": false,
+		"atlascode.bitbucket.statusbar.showProduct": false,
+		"atlascode.bitbucket.statusbar.enabled": false
+	}
+}
