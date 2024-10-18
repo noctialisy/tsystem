@@ -6,6 +6,7 @@ class MainHandler:
     date = datetime.datetime.now()
     main_folder = os.path.dirname(os.path.abspath(__file__))
     script_folder = os.path.realpath(main_folder + '/../scripts')
+    log_folder = os.path.realpath(main_folder + '/../logs')
 
     # Main constructor and command initializer
     def __init__(self, commands):
@@ -14,8 +15,7 @@ class MainHandler:
         if getattr(sys, 'frozen', False):
             self.main_folder = os.path.dirname(os.path.abspath(commands[0]))
             self.script_folder = os.path.realpath(self.main_folder + '/scripts')
-
-        print(self.script_folder)
+            self.log_folder = os.path.realpath(self.main_folder + '/logs')
 
     def help(self):
         print('===========================================')

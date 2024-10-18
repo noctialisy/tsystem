@@ -20,9 +20,7 @@ class SystemHandler(MainHandler.MainHandler):
         subprocess.run('SFC /ScanNow')
 
     def system_test(self):
-        path = './logs'
-        log_file = 'Assessment_' + str(self.date.timestamp()) + '.xml'
-        subprocess.run(['WinSat', 'formal', '-restart', 'clean', '-v', '-xml ' + os.path.realpath(path) + '\\' + log_file])
+        subprocess.run('WinSat formal -restart clean -v -xml ' + os.path.realpath(self.log_folder + '/' + 'Assessment_' + str(self.date.timestamp()) + '.xml'))
 
     def choco_install(self):
         subprocess.run(os.path.realpath(self.script_folder + '/choco_install.ps1'))
