@@ -25,6 +25,12 @@ def main():
             elif command == 'system_clean_full':
                 system_handler.system_clean_full()
 
+            elif command == 'system_scan':
+                system_handler.system_scan()
+
+            elif command == 'system_test':
+                system_handler.system_test()
+
             elif command == 'netframework_install':
                 system_handler.netframework_install()
 
@@ -61,7 +67,16 @@ def main():
 
                     video_handler.stream_markers_convert(file_path)
             
+            elif command == 'help':
+                print('')
+                system_handler.help()
+
+            elif 'tsystem' in command:
+                continue
+
             else:
+                print('Invalid command specified.')
+                print('')
                 system_handler.help()
 
 

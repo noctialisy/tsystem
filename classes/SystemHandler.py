@@ -12,13 +12,13 @@ class SystemHandler(MainHandler.MainHandler):
     
     def system_clean_full(self):
         subprocess.run(['cleanmgr', '/sagerun:1'])
-        subprocess.run(['./modules/bat/cleanEventLot.bat'])
+        subprocess.run('.\\bat\\cleanEventLog.bat')
 
     def system_scan(self):
-        subprocess.run(['DISM', '/Online', '/Cleanup-Image', '/AnalyzeComponentStore'])
-        subprocess.run(['DISM', '/Online', '/Cleanup-Image', '/StartComponentCleanup'])
-        subprocess.run(['DISM', '/Online', '/Cleanup-Image', '/RestoreHealth'])
-        subprocess.run(['SFC', '/ScanNow'])
+        subprocess.run('DISM /Online /Cleanup-Image /AnalyzeComponentStore')
+        subprocess.run('DISM /Online /Cleanup-Image /StartComponentCleanup')
+        subprocess.run('DISM /Online /Cleanup-Image /RestoreHealth')
+        subprocess.run('SFC /ScanNow')
 
     def system_test(self):
         log_file = './logs/Assessment_' + str(self.date.timestamp()) + '.xml'

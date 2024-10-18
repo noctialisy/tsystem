@@ -25,7 +25,7 @@ class MainHandler:
         print('  system_clean_set')
         print('    Calls cleanmgr to set the default clean profile')
         print('  system_clean_full')
-        print('    Same as system_clean but also calls cleanEventLog.bat from the module path')
+        print('    Same as system_clean but also calls cleanEventLog.bat from the bat folder')
         print('  system_scan')
         print('    Scans the system using DISM and SFC to find errors and repair them')
         print('  system_test')
